@@ -93,30 +93,57 @@ if (contactForm) {
             statusEl.textContent = '';
         }
 
-        const name = document.getElementById('name')?.value?.trim() || '';
-        const email = document.getElementById('email')?.value?.trim() || '';
-        const subject = document.getElementById('subject')?.value?.trim() || 'Anfrage über rbc-tech.ch';
-        const message = document.getElementById('message')?.value?.trim() || '';
+        const actionUrl = (this.getAttribute('action') || '').trim();
+        const recipientEmail = (() => {
+            const marker = '/ajax/';
+            const idx = actionUrl.indexOf(marker);
+            if (idx === -1) return '';
+            const raw = actionUrl.slice(idx + marker.length);
+            return decodeURIComponent(raw.split('?')[0]).trim();
+        })();
 
-        const mailTo = 'info@rbc-tech.ch';
-        const bodyLines = [
-            'Hallo RBC Tech,',
-            '',
-            message,
-            '',
-            '---',
-            `Name: ${name}`,
-            `E-Mail: ${email}`,
-        ];
-
-        const mailtoUrl = `mailto:${mailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
-        window.location.href = mailtoUrl;
-
-        if (statusEl) {
-            statusEl.classList.add('success');
-            statusEl.textContent = 'Danke! Ihr E‑Mail‑Programm öffnet sich mit einer vorbefüllten Nachricht. Falls nichts passiert, schreiben Sie direkt an info@rbc-tech.ch.';
+        if (!actionUrl) {
+            if (statusEl) {
+                statusEl.textContent = recipientEmail
+                    ? `Formular ist nicht konfiguriert. Bitte schreiben Sie direkt an ${recipientEmail}.`
+                    : 'Formular ist nicht konfiguriert.';
+            }
+            return;
         }
-        this.reset();
+
+        const formData = new FormData(this);
+        fetch(actionUrl, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(async (res) => {
+            if (!res.ok) {
+                let details = '';
+                try {
+                    const data = await res.json();
+                    details = data?.message ? ` (${data.message})` : '';
+                } catch {
+                    // ignore
+                }
+                throw new Error(`Request failed${details}`);
+            }
+
+            if (statusEl) {
+                statusEl.classList.add('success');
+                statusEl.textContent = 'Danke! Ihre Nachricht wurde gesendet. Wir melden uns in der Regel innerhalb von 1 Werktag.';
+            }
+            this.reset();
+        })
+        .catch(() => {
+            if (statusEl) {
+                statusEl.textContent = recipientEmail
+                    ? `Senden fehlgeschlagen. Bitte versuchen Sie es später erneut oder schreiben Sie direkt an ${recipientEmail}.`
+                    : 'Senden fehlgeschlagen. Bitte versuchen Sie es später erneut.';
+            }
+        });
     });
 }
 
