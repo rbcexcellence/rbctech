@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Kostenlose Erstberatung | RBC Tech</title>
+    <meta name="description" content="Kontaktieren Sie RBC Tech: unverbindliche Erstberatung zu Webdesign & Frontend. Schnelle Rückmeldung, klare nächste Schritte und saubere Umsetzung.">
+    <meta name="theme-color" content="#27ae60">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_CH">
+    <meta property="og:title" content="Kontakt – Kostenlose Erstberatung | RBC Tech">
+    <meta property="og:description" content="Unverbindliche Erstberatung zu Webdesign & Frontend. Schnelle Rückmeldung und klare nächste Schritte.">
+    <meta property="og:image" content="assets/og-image.svg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kontakt | RBC Tech">
+    <meta name="twitter:description" content="Kostenlose Erstberatung zu Webdesign & Frontend.">
+    <meta name="twitter:image" content="assets/og-image.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.svg" alt="RBC Tech" class="logo-img">
+            </div>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="services.html">Dienstleistungen</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-icon"><i class="fas fa-envelope"></i></div>
+            <h1>Kontaktieren Sie uns</h1>
+            <p>Haben Sie Fragen oder möchten Sie ein Projekt besprechen? Schreiben Sie uns – wir antworten in der Regel innerhalb von 1 Werktag.</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Nachricht senden</h2>
+                    <p>Beschreiben Sie kurz Ihr Ziel (z.B. neue Website, Landingpage, Überarbeitung). Ihr E‑Mail‑Programm öffnet sich mit einer vorbefüllten Nachricht.</p>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Betreff *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="z.B. Website für mein Unternehmen">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Beschreiben Sie Ihr Projekt oder Ihre Anfrage..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="privacy" required>
+                                Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der Kontaktaufnahme einverstanden. *
+                            </label>
+                        </div>
+                        <button type="submit" class="btn primary">Nachricht senden</button>
+                        <div class="form-status" id="formStatus" aria-live="polite"></div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Kontaktinformationen</h2>
+                    <p>Mehrere Wege, um mit uns in Kontakt zu treten:</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>E-Mail</h3>
+                                <p>info@rbc-tech.ch</p>
+                                <small>Antwort i.d.R. innerhalb 1 Werktag</small>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Telefon</h3>
+                                <p>+41 78 604 74 99</p>
+                                <small>Mo/Do 14:00–17:00</small>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Adresse</h3>
+                                <p>8400 Winterthur<br>Schweiz</p>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Geschäftszeiten</h3>
+                                <p>Montag - Freitag<br>09:00 - 17:00 Uhr</p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-code"></i> RBC Tech
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="services.html">Dienstleistungen</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt</h3>
+                <p>E-Mail: info@rbc-tech.ch</p>
+                <p>Telefon: +41 78 604 74 99</p>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; 2026 RBC Tech. Alle Rechte vorbehalten. | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+        </div>
+    </footer>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
