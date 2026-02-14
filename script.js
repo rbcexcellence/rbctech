@@ -112,6 +112,18 @@ if (contactForm) {
         }
 
         const formData = new FormData(this);
+
+        // Ensure the subject is included both in the email subject line (_subject)
+        // and in the email body (subject).
+        const subjectInput = this.querySelector('#subject');
+        const subjectValue = (subjectInput && 'value' in subjectInput) ? String(subjectInput.value).trim() : '';
+        if (subjectValue) {
+            formData.set('_subject', subjectValue);
+            const hiddenSubject = this.querySelector('#_subject');
+            if (hiddenSubject && 'value' in hiddenSubject) {
+                hiddenSubject.value = subjectValue;
+            }
+        }
         fetch(actionUrl, {
             method: 'POST',
             body: formData,
