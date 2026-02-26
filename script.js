@@ -94,6 +94,20 @@ if (contactForm) {
         }
 
         const actionUrl = (this.getAttribute('action') || '').trim();
+        const parsedActionUrl = (() => {
+            try {
+                return new URL(actionUrl, window.location.href);
+            } catch {
+                return null;
+            }
+        })();
+
+        const isAllowedEndpoint = Boolean(
+            parsedActionUrl &&
+            parsedActionUrl.protocol === 'https:' &&
+            parsedActionUrl.hostname === 'formsubmit.co' &&
+            parsedActionUrl.pathname.startsWith('/ajax/')
+        );
         const recipientEmail = (() => {
             const marker = '/ajax/';
             const idx = actionUrl.indexOf(marker);
@@ -102,11 +116,18 @@ if (contactForm) {
             return decodeURIComponent(raw.split('?')[0]).trim();
         })();
 
-        if (!actionUrl) {
+        if (!actionUrl || !parsedActionUrl) {
             if (statusEl) {
                 statusEl.textContent = recipientEmail
                     ? `Formular ist nicht konfiguriert. Bitte schreiben Sie direkt an ${recipientEmail}.`
                     : 'Formular ist nicht konfiguriert.';
+            }
+            return;
+        }
+
+        if (!isAllowedEndpoint) {
+            if (statusEl) {
+                statusEl.textContent = 'Formular-Endpoint ist ungültig. Bitte laden Sie die Seite neu oder kontaktieren Sie uns per E‑Mail.';
             }
             return;
         }
@@ -124,12 +145,13 @@ if (contactForm) {
                 hiddenSubject.value = subjectValue;
             }
         }
-        fetch(actionUrl, {
+        fetch(parsedActionUrl.toString(), {
             method: 'POST',
             body: formData,
             headers: {
                 'Accept': 'application/json'
-            }
+            },
+            referrerPolicy: 'no-referrer'
         })
         .then(async (res) => {
             if (!res.ok) {

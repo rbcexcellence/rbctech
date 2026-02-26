@@ -7,6 +7,9 @@
     <meta name="description" content="Kontaktieren Sie RBC Tech: unverbindliche Erstberatung zu Webdesign & Frontend. Schnelle Rückmeldung, klare nächste Schritte und saubere Umsetzung.">
     <meta name="theme-color" content="#27ae60">
 
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self' https://formsubmit.co; connect-src 'self' https://formsubmit.co; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; script-src 'self'; upgrade-insecure-requests">
+
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_CH">
     <meta property="og:title" content="Kontakt – Kostenlose Erstberatung | RBC Tech">
@@ -20,7 +23,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -58,8 +61,8 @@
                 <div class="contact-form">
                     <h2>Nachricht senden</h2>
                     <p>Beschreiben Sie kurz Ihr Ziel (z.B. neue Website, Landingpage, Überarbeitung).</p> <br>
-                    <form id="contactForm" action="https://formsubmit.co/ajax/cekaj.riart@outlook.com" method="POST">
-                        <input type="text" name="_honey" style="display:none">
+                    <form id="contactForm" action="https://formsubmit.co/ajax/cekaj.riart@outlook.com" method="POST" autocomplete="on">
+                        <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" id="_subject" name="_subject" value="">
                         <div class="form-group">

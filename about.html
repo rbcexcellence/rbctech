@@ -7,6 +7,9 @@
     <meta name="description" content="RBC Tech entwickelt moderne, performante Websites für KMU in der Schweiz. Klarer Prozess, schnelle Umsetzung, langfristig wartbar.">
     <meta name="theme-color" content="#27ae60">
 
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; script-src 'self'; upgrade-insecure-requests">
+
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_CH">
     <meta property="og:title" content="Über RBC Tech – Webdesign & Frontend Schweiz">
@@ -20,7 +23,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -84,7 +87,7 @@
                 <h2>Unser Versprechen</h2>
                 <p>Sie erhalten eine Website, die auf aktuellen Standards basiert, auf Mobilgeräten überzeugt und Ihnen die Pflege erleichtert. Auf Wunsch unterstützen wir auch nach dem Go‑Live mit Updates und Optimierungen.</p>
 
-                <div style="margin-top: 2rem;">
+                <div class="cta-block">
                     <a href="contact.html" class="btn primary">Projekt unverbindlich anfragen</a>
                 </div>
             </div>
