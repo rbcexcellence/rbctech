@@ -5,7 +5,7 @@ export default function NotFound() {
   usePageMeta({
     title: "404 - Seite nicht gefunden | RBC Tech",
     description:
-      "Diese Seite existiert nicht (mehr). Zuruck zur Startseite oder kontaktieren Sie RBC Tech fur Fragen.",
+      "Diese Seite existiert nicht (mehr). Zurück zur Startseite oder kontaktieren Sie RBC Tech für Fragen.",
     robots: "noindex,follow",
   });
 
@@ -36,10 +36,10 @@ export default function NotFound() {
           <div className="feature">
             <i className="fas fa-house" aria-hidden="true"></i>
             <h3>Startseite</h3>
-            <p>Zur Ubersicht: Leistungen, Vorteile und Vorgehen.</p>
+            <p>Zur Übersicht: Leistungen, Vorteile und Vorgehen.</p>
             <div className="cta-block cta-block--center">
               <Link to="/" className="btn primary">
-                Start offnen
+                Startseite öffnen
               </Link>
             </div>
           </div>

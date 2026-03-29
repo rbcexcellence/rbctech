@@ -12,7 +12,7 @@ export default function Impressum() {
       <section className="legal-hero">
         <div className="container">
           <h1>Impressum</h1>
-          <p>Rechtliche Informationen gemass schweizerischem Recht</p>
+          <p>Rechtliche Informationen gemäss schweizerischem Recht</p>
         </div>
       </section>
 
@@ -39,29 +39,29 @@ export default function Impressum() {
 
             <h2>Vertretungsberechtigte Person</h2>
             <p>
-              <strong>Inhaber / Geschaftsfuhrung:</strong> Riart Cekaj
+              <strong>Inhaber / Geschäftsführung:</strong> Riart Çekaj
             </p>
 
             <h2>Hinweis</h2>
             <p>
-              Die Angaben auf dieser Seite dienen der Kontaktaufnahme und der Erfullung gesetzlicher
+              Die Angaben auf dieser Seite dienen der Kontaktaufnahme und der Erfüllung gesetzlicher
               Informationspflichten nach anwendbarem Recht (insbesondere schweizerischem Recht).
             </p>
 
             <h2>Haftungsausschluss</h2>
-            <h3>Haftung fur Inhalte</h3>
+            <h3>Haftung für Inhalte</h3>
             <p>
-              Die Inhalte dieser Website werden mit Sorgfalt erstellt. Dennoch ubernehmen wir keine
-              Gewahr fur Richtigkeit, Vollstandigkeit und Aktualitat. Haftungsanspruche gegen RBC
+              Die Inhalte dieser Website werden mit Sorgfalt erstellt. Dennoch übernehmen wir keine
+              Gewähr für Richtigkeit, Vollständigkeit und Aktualität. Haftungsanspruche gegen RBC
               Tech wegen Schaden materieller oder immaterieller Art, die aus dem Zugriff oder der
-              Nutzung bzw. Nichtnutzung der veroffentlichten Informationen entstanden sind, werden -
-              soweit gesetzlich zulassig - ausgeschlossen.
+              Nutzung bzw. Nichtnutzung der veröffentlichten Informationen entstanden sind, werden -
+              soweit gesetzlich zulässig - ausgeschlossen.
             </p>
 
-            <h3>Haftung fur Links</h3>
+            <h3>Haftung für Links</h3>
             <p>
               Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres
-              Verantwortungsbereichs. Es wird jegliche Verantwortung fur solche Webseiten abgelehnt.
+              Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt.
               Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des Nutzers.
             </p>
 
@@ -70,15 +70,15 @@ export default function Impressum() {
               Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
               unterliegen dem schweizerischen Urheberrecht. Die Vervielfaltigung, Bearbeitung,
               Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechtes
-              bedurfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-              Downloads und Kopien dieser Seite sind nur fur den privaten, nicht kommerziellen
+              bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+              Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen
               Gebrauch gestattet.
             </p>
 
             <h3>Datenschutz</h3>
             <p>
               Informationen zur Bearbeitung personenbezogener Daten finden Sie in unserer{" "}
-              <Link to="/datenschutz">Datenschutzerklarung</Link>.
+              <Link to="/datenschutz">Datenschutzerklärung</Link>.
             </p>
 
             <p>

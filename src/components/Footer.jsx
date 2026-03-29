@@ -24,7 +24,7 @@ export default function Footer() {
             </li>
             <li>
               <Link to="/about" className={linkClassName(["/about", "/about.html"])}>
-                Uber uns
+                Über uns
               </Link>
             </li>
             <li>

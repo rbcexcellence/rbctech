@@ -3,9 +3,9 @@ import usePageMeta from "../hooks/usePageMeta";
 
 export default function About() {
   usePageMeta({
-    title: "Uber RBC Tech - Webdesign & Frontend Schweiz",
+    title: "Über RBC Tech - Webdesign & Frontend Schweiz",
     description:
-      "RBC Tech entwickelt moderne, performante Websites fur KMU in der Schweiz. Klarer Prozess, schnelle Umsetzung, langfristig wartbar.",
+      "RBC Tech entwickelt moderne, performante Websites für KMU in der Schweiz. Klarer Prozess, schnelle Umsetzung, langfristig wartbar.",
   });
 
   return (
@@ -15,8 +15,8 @@ export default function About() {
           <div className="hero-icon">
             <i className="fas fa-users" aria-hidden="true"></i>
           </div>
-          <h1>Uber RBC Tech</h1>
-          <p>Frontend-Websites, die Marken starken und Anfragen generieren</p>
+          <h1>Über RBC Tech</h1>
+          <p>Frontend-Websites, die Marken stärken und Anfragen generieren</p>
         </div>
       </section>
 
@@ -26,24 +26,24 @@ export default function About() {
             <h2>Unsere Mission</h2>
             <p>
               Wir helfen kleinen und mittleren Unternehmen dabei, online professionell aufzutreten -
-              mit schnellen, modernen und wartungsarmen Websites. Statt unnotiger Komplexitat
+              mit schnellen, modernen und wartungsarmen Websites. Statt unnötiger Komplexitat
               setzen wir auf klare Inhalte, saubere Technik und einen strukturierten Prozess.
             </p>
 
-            <h2>Wofur wir stehen</h2>
+            <h2>Wofür wir stehen</h2>
             <p>
-              Eine gute Website ist mehr als "schon". Sie muss verstandlich sein, Vertrauen
-              aufbauen und auf allen Geraten funktionieren. Darum kombinieren wir Design-Sorgfalt
+              Eine gute Website ist mehr als "schön". Sie muss verständlich sein, Vertrauen
+              aufbauen und auf allen Geräten funktionieren. Darum kombinieren wir Design-Sorgfalt
               mit technischer Qualitat und Fokus auf Performance.
             </p>
 
-            <h2>Warum wahlen Sie uns?</h2>
+            <h2>Warum uns wählen?</h2>
             <div className="benefits-grid">
               <div className="benefit">
                 <i className="fas fa-lightbulb" aria-hidden="true"></i>
                 <h3>Klar & modern</h3>
                 <p>
-                  Modernes Design, saubere Struktur und verstandliche Inhalte - ohne
+                  Modernes Design, saubere Struktur und verständliche Inhalte - ohne
                   Buzzword-Overload.
                 </p>
               </div>
@@ -64,8 +64,8 @@ export default function About() {
 
             <h2>Unser Versprechen</h2>
             <p>
-              Sie erhalten eine Website, die auf aktuellen Standards basiert, auf Mobilgeraten
-              uberzeugt und Ihnen die Pflege erleichtert. Auf Wunsch unterstutzen wir auch nach dem
+              Sie erhalten eine Website, die auf aktuellen Standards basiert, auf Mobilgeräten
+              überzeugt und Ihnen die Pflege erleichtert. Auf Wunsch unterstützen wir auch nach dem
               Go-Live mit Updates und Optimierungen.
             </p>
 

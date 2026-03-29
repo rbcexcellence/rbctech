@@ -8,7 +8,7 @@ export default function Contact() {
   usePageMeta({
     title: "Kontakt - Kostenlose Erstberatung | RBC Tech",
     description:
-      "Kontaktieren Sie RBC Tech: unverbindliche Erstberatung zu Webdesign & Frontend. Schnelle Ruckmeldung, klare nachste Schritte und saubere Umsetzung.",
+      "Kontaktieren Sie RBC Tech: unverbindliche Erstberatung zu Webdesign & Frontend. Schnelle Rückmeldung, klare nächste Schritte und saubere Umsetzung.",
   });
 
   const [submitting, setSubmitting] = useState(false);
@@ -58,7 +58,7 @@ export default function Contact() {
 
     if (!isAllowedEndpoint) {
       setStatus({
-        text: "Formular-Endpoint ist ungultig. Bitte laden Sie die Seite neu oder kontaktieren Sie uns per E-Mail.",
+        text: "Formular-Endpoint ist ungültig. Bitte laden Sie die Seite neu oder kontaktieren Sie uns per E-Mail.",
         success: false,
       });
       return;
@@ -103,8 +103,8 @@ export default function Contact() {
     } catch {
       setStatus({
         text: recipientEmail
-          ? `Senden fehlgeschlagen. Bitte versuchen Sie es spater erneut oder schreiben Sie direkt an ${recipientEmail}.`
-          : "Senden fehlgeschlagen. Bitte versuchen Sie es spater erneut.",
+          ? `Senden fehlgeschlagen. Bitte versuchen Sie es später erneut oder schreiben Sie direkt an ${recipientEmail}.`
+          : "Senden fehlgeschlagen. Bitte versuchen Sie es später erneut.",
         success: false,
       });
     } finally {
@@ -121,7 +121,7 @@ export default function Contact() {
           </div>
           <h1>Kontaktieren Sie uns</h1>
           <p>
-            Haben Sie Fragen oder mochten Sie ein Projekt besprechen? Schreiben Sie uns - wir
+            Haben Sie Fragen oder möchten Sie ein Projekt besprechen? Schreiben Sie uns - wir
             antworten in der Regel innerhalb von 1 Werktag.
           </p>
         </div>
@@ -132,7 +132,7 @@ export default function Contact() {
           <div className="contact-grid">
             <div className="contact-form">
               <h2>Nachricht senden</h2>
-              <p>Beschreiben Sie kurz Ihr Ziel (z.B. neue Website, Landingpage, Uberarbeitung).</p>
+              <p>Beschreiben Sie kurz Ihr Ziel (z.B. neue Website, Landingpage, Überarbeitung).</p>
               <br />
               <form id="contactForm" onSubmit={handleSubmit} autoComplete="on">
                 <input
@@ -147,7 +147,7 @@ export default function Contact() {
                 <input type="hidden" id="_subject" name="_subject" value="" readOnly />
 
                 <div className="form-group">
-                  <label htmlFor="name">Vollstandiger Name *</label>
+                  <label htmlFor="name">Vollständiger Name *</label>
                   <input type="text" id="name" name="name" required />
                 </div>
                 <div className="form-group">
@@ -171,7 +171,7 @@ export default function Contact() {
                     id="subject"
                     name="subject"
                     required
-                    placeholder="z.B. Website fur mein Unternehmen"
+                    placeholder="z.B. Website für mein Unternehmen"
                   />
                 </div>
                 <div className="form-group">

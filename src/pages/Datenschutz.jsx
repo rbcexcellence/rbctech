@@ -4,15 +4,15 @@ export default function Datenschutz() {
   usePageMeta({
     title: "Datenschutz | RBC Tech",
     description:
-      "Datenschutzerklarung von RBC Tech. Informationen zur Bearbeitung personenbezogener Daten bei Besuch und Kontaktaufnahme.",
+      "Datenschutzerklärung von RBC Tech. Informationen zur Bearbeitung personenbezogener Daten bei Besuch und Kontaktaufnahme.",
   });
 
   return (
     <>
       <section className="legal-hero">
         <div className="container">
-          <h1>Datenschutzerklarung</h1>
-          <p>Schutz Ihrer personlichen Daten</p>
+          <h1>Datenschutzerklärung</h1>
+          <p>Schutz Ihrer persönlichen Daten</p>
         </div>
       </section>
 
@@ -21,7 +21,7 @@ export default function Datenschutz() {
           <div className="legal-text">
             <h2>1. Allgemeine Hinweise</h2>
             <p>
-              Diese Datenschutzerklarung informiert daruber, wie RBC Tech personenbezogene Daten im
+              Diese Datenschutzerklärung informiert darüber, wie RBC Tech personenbezogene Daten im
               Zusammenhang mit dieser Website bearbeitet. Die Bearbeitung erfolgt nach anwendbarem
               Datenschutzrecht (insbesondere dem Schweizer Datenschutzgesetz, sofern anwendbar auch
               weiteren Vorschriften).
@@ -40,12 +40,12 @@ export default function Datenschutz() {
 
             <h2>3. Besuch der Website (Server-Logs)</h2>
             <p>
-              Beim Aufruf dieser Website konnen technische Daten anfallen, die Ihr Browser
-              automatisch ubermittelt und die der Hosting-Anbieter typischerweise in
-              Server-Logdateien speichert. Dazu konnen gehoren:
+              Beim Aufruf dieser Website können technische Daten anfallen, die Ihr Browser
+              automatisch übermittelt und die der Hosting-Anbieter typischerweise in
+              Server-Logdateien speichert. Dazu können gehören:
             </p>
             <ul>
-              <li>IP-Adresse (ggf. gekurzt), Datum und Uhrzeit des Zugriffs</li>
+              <li>IP-Adresse (ggf. gekürzt), Datum und Uhrzeit des Zugriffs</li>
               <li>aufgerufene Seite/Datei</li>
               <li>Browsertyp und -version, Betriebssystem</li>
               <li>Referrer-URL</li>
@@ -59,15 +59,15 @@ export default function Datenschutz() {
             <h3>E-Mail, Telefon und Kontaktformular</h3>
             <p>
               Wenn Sie uns kontaktieren, bearbeiten wir Ihre Angaben (z.B. Name, E-Mail-Adresse,
-              Inhalt der Nachricht) zur Bearbeitung Ihrer Anfrage und fur Ruckfragen.
+              Inhalt der Nachricht) zur Bearbeitung Ihrer Anfrage und für Rückfragen.
             </p>
             <p>
               <strong>Hinweis zum Kontaktformular:</strong> Wenn Sie das Kontaktformular nutzen,
               werden die eingegebenen Daten beim Absenden an einen externen Dienst zur
-              Formularubermittlung (FormSubmit, Domain <em>formsubmit.co</em>) ubertragen, der die
+              Formularübermittlung (FormSubmit, Domain <em>formsubmit.co</em>) übertragen, der die
               Nachricht als E-Mail an uns weiterleitet. Dabei werden insbesondere die von Ihnen
-              eingegebenen Felder (z.B. Name, E-Mail, Telefon, Betreff, Nachricht) ubermittelt.
-              Bitte beachten Sie, dass damit eine Datenubermittlung an einen Drittanbieter verbunden
+              eingegebenen Felder (z.B. Name, E-Mail, Telefon, Betreff, Nachricht) übermittelt.
+              Bitte beachten Sie, dass damit eine Datenübermittlung an einen Drittanbieter verbunden
               ist.
             </p>
 
@@ -79,21 +79,21 @@ export default function Datenschutz() {
 
             <h2>6. Aufbewahrung</h2>
             <p>
-              Wir bearbeiten und speichern personenbezogene Daten nur so lange, wie dies fur den
+              Wir bearbeiten und speichern personenbezogene Daten nur so lange, wie dies für den
               jeweiligen Zweck erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.
             </p>
 
             <h2>7. Ihre Rechte</h2>
             <p>
-              Je nach anwendbarem Recht haben Sie Rechte auf Auskunft, Berichtigung, Loschung sowie
-              weitere Rechte bezuglich Ihrer personenbezogenen Daten. Fur Anfragen kontaktieren Sie
-              uns bitte uber die oben genannten Kontaktmoglichkeiten.
+              Je nach anwendbarem Recht haben Sie Rechte auf Auskunft, Berichtigung, Löschung sowie
+              weitere Rechte bezüglich Ihrer personenbezogenen Daten. Für Anfragen kontaktieren Sie
+              uns bitte über die oben genannten Kontaktmöglichkeiten.
             </p>
 
-            <h2>8. Anderungen</h2>
+            <h2>8. Änderungen</h2>
             <p>
-              Wir konnen diese Datenschutzerklarung bei Bedarf anpassen (z.B. bei technischen
-              Anderungen oder rechtlichen Anforderungen). Es gilt die jeweils veroffentlichte
+              Wir können diese Datenschutzerklärung bei Bedarf anpassen (z.B. bei technischen
+              Änderungen oder rechtlichen Anforderungen). Es gilt die jeweils veröffentlichte
               Version.
             </p>
 

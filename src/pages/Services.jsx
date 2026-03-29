@@ -5,7 +5,7 @@ export default function Services() {
   usePageMeta({
     title: "Leistungen - Webdesign, Frontend & SEO | RBC Tech",
     description:
-      "Webdesign, Frontend, SEO-Basics und Wartung: RBC Tech liefert moderne, schnelle Websites fur KMU in der Schweiz - klar, sicher und effizient.",
+      "Webdesign, Frontend, SEO-Basics und Wartung: RBC Tech liefert moderne, schnelle Websites für KMU in der Schweiz - klar, sicher und effizient.",
   });
 
   return (
@@ -16,7 +16,7 @@ export default function Services() {
             <i className="fas fa-tools" aria-hidden="true"></i>
           </div>
           <h1>Unsere Dienstleistungen</h1>
-          <p>Moderne Websites - klar, schnell und auf Ihr Geschaft ausgerichtet</p>
+          <p>Moderne Websites - klar, schnell und auf Ihr Geschäft ausgerichtet</p>
         </div>
       </section>
 
@@ -27,7 +27,7 @@ export default function Services() {
               <i className="fas fa-palette" aria-hidden="true"></i>
               <h3>Responsive Webdesign</h3>
               <p>
-                Modernes Design, das Ihre Marke starkt - optimiert fur Mobile, Tablet und Desktop.
+                Modernes Design, das Ihre Marke stärkt - optimiert für Mobile, Tablet und Desktop.
               </p>
             </div>
             <div className="service-card">
@@ -42,7 +42,7 @@ export default function Services() {
               <i className="fas fa-search" aria-hidden="true"></i>
               <h3>SEO-Optimierung</h3>
               <p>
-                On-Page-SEO-Basics: Seitenstruktur, Meta-Daten, Ladezeit, saubere Uberschriften und
+                On-Page-SEO-Basics: Seitenstruktur, Meta-Daten, Ladezeit, saubere Überschriften und
                 interne Verlinkung.
               </p>
             </div>
@@ -50,15 +50,15 @@ export default function Services() {
               <i className="fas fa-tools" aria-hidden="true"></i>
               <h3>Wartung & Support</h3>
               <p>
-                Updates, kleine Anpassungen und Qualitats-Checks - damit Ihre Website langfristig
-                zuverlassig bleibt.
+                Updates, kleine Anpassungen und Qualitäts-Checks - damit Ihre Website langfristig
+                zuverlässig bleibt.
               </p>
             </div>
             <div className="service-card">
               <i className="fas fa-layer-group" aria-hidden="true"></i>
               <h3>Landingpages & One-Pager</h3>
               <p>
-                Fokussierte Seiten fur Kampagnen, Produkte oder Events - mit klaren CTAs und
+                Fokussierte Seiten für Kampagnen, Produkte oder Events - mit klaren CTAs und
                 sauberem Tracking-Setup nach Bedarf.
               </p>
             </div>
@@ -73,10 +73,10 @@ export default function Services() {
           </div>
 
           <div className="cta-block cta-block--center">
-            <h2>Bereit fur einen professionellen Auftritt?</h2>
+            <h2>Bereit für einen professionellen Auftritt?</h2>
             <p>
               Schildern Sie kurz Ihr Ziel - wir melden uns mit einer Empfehlung und einem klaren
-              nachsten Schritt.
+              nächsten Schritt.
             </p>
             <Link to="/contact" className="btn primary">
               Unverbindlich anfragen

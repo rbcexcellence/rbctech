@@ -91,7 +91,7 @@ export default function Navbar() {
               onClick={closeMenu}
               aria-current={isActive(["/about", "/about.html"]) ? "page" : undefined}
             >
-              Uber uns
+              Über uns
             </Link>
           </li>
           <li>
