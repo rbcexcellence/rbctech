@@ -76,7 +76,7 @@ export default function Navbar() {
         <ul ref={navRef} className={menuOpen ? "nav-active" : ""}>
           <li>
             <Link
-              to="/index.html"
+              to="/"
               className={linkClassName(["/", "/index.html"])}
               onClick={closeMenu}
               aria-current={isActive(["/", "/index.html"]) ? "page" : undefined}
@@ -86,7 +86,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              to="/about.html"
+              to="/about"
               className={linkClassName(["/about", "/about.html"])}
               onClick={closeMenu}
               aria-current={isActive(["/about", "/about.html"]) ? "page" : undefined}
@@ -96,7 +96,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              to="/services.html"
+              to="/services"
               className={linkClassName(["/services", "/services.html"])}
               onClick={closeMenu}
               aria-current={isActive(["/services", "/services.html"]) ? "page" : undefined}
@@ -106,7 +106,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              to="/contact.html"
+              to="/contact"
               className={linkClassName(["/contact", "/contact.html"])}
               onClick={closeMenu}
               aria-current={isActive(["/contact", "/contact.html"]) ? "page" : undefined}

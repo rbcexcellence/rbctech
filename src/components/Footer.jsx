@@ -18,22 +18,22 @@ export default function Footer() {
           <h3>Navigation</h3>
           <ul>
             <li>
-              <Link to="/index.html" className={linkClassName(["/", "/index.html"])}>
+              <Link to="/" className={linkClassName(["/", "/index.html"])}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about.html" className={linkClassName(["/about", "/about.html"])}>
+              <Link to="/about" className={linkClassName(["/about", "/about.html"])}>
                 Uber uns
               </Link>
             </li>
             <li>
-              <Link to="/services.html" className={linkClassName(["/services", "/services.html"])}>
+              <Link to="/services" className={linkClassName(["/services", "/services.html"])}>
                 Dienstleistungen
               </Link>
             </li>
             <li>
-              <Link to="/contact.html" className={linkClassName(["/contact", "/contact.html"])}>
+              <Link to="/contact" className={linkClassName(["/contact", "/contact.html"])}>
                 Kontakt
               </Link>
             </li>
@@ -49,8 +49,8 @@ export default function Footer() {
 
       <div className="footer-legal">
         <p>
-          &copy; 2026 RBC Tech. Alle Rechte vorbehalten. | <Link to="/impressum.html">Impressum</Link> |{" "}
-          <Link to="/datenschutz.html">Datenschutz</Link>
+          &copy; 2026 RBC Tech. Alle Rechte vorbehalten. | <Link to="/impressum">Impressum</Link> |{" "}
+          <Link to="/datenschutz">Datenschutz</Link>
         </p>
       </div>
     </footer>

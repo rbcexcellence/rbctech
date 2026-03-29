@@ -78,7 +78,7 @@ export default function Services() {
               Schildern Sie kurz Ihr Ziel - wir melden uns mit einer Empfehlung und einem klaren
               nachsten Schritt.
             </p>
-            <Link to="/contact.html" className="btn primary">
+            <Link to="/contact" className="btn primary">
               Unverbindlich anfragen
             </Link>
           </div>

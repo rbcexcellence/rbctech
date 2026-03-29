@@ -78,7 +78,7 @@ export default function Impressum() {
             <h3>Datenschutz</h3>
             <p>
               Informationen zur Bearbeitung personenbezogener Daten finden Sie in unserer{" "}
-              <Link to="/datenschutz.html">Datenschutzerklarung</Link>.
+              <Link to="/datenschutz">Datenschutzerklarung</Link>.
             </p>
 
             <p>

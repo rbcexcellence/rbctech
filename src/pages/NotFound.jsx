@@ -20,10 +20,10 @@ export default function NotFound() {
           <p>Die angeforderte Seite existiert nicht (mehr) oder die URL ist falsch.</p>
 
           <div className="hero-buttons" aria-label="Schnellnavigation">
-            <Link to="/index.html" className="btn primary">
+            <Link to="/" className="btn primary">
               Zur Startseite
             </Link>
-            <Link to="/contact.html" className="btn secondary">
+            <Link to="/contact" className="btn secondary">
               Kontakt aufnehmen
             </Link>
           </div>
@@ -38,7 +38,7 @@ export default function NotFound() {
             <h3>Startseite</h3>
             <p>Zur Ubersicht: Leistungen, Vorteile und Vorgehen.</p>
             <div className="cta-block cta-block--center">
-              <Link to="/index.html" className="btn primary">
+              <Link to="/" className="btn primary">
                 Start offnen
               </Link>
             </div>
@@ -49,7 +49,7 @@ export default function NotFound() {
             <h3>Kontakt</h3>
             <p>Fragen zur Website oder einem Projekt? Wir melden uns i.d.R. innerhalb 1 Werktag.</p>
             <div className="cta-block cta-block--center">
-              <Link to="/contact.html" className="btn primary">
+              <Link to="/contact" className="btn primary">
                 Nachricht senden
               </Link>
             </div>

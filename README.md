@@ -14,5 +14,6 @@ Diese Website wurde von statischem HTML auf React mit Vite umgestellt.
 
 ## Hinweise
 
-- Bestehende URLs wie `index.html`, `about.html`, `services.html`, `contact.html`, `impressum.html`, `datenschutz.html` und `404.html` bleiben als Entry-Points erhalten.
+- Die App laeuft als Single-Page-Application mit sauberen Routen wie `/about`, `/services`, `/contact`.
+- Fuer GitHub Pages ist ein SPA-Fallback ueber `public/404.html` eingerichtet, damit direkte Aufrufe auf Unterseiten funktionieren.
 - Assets sowie `CNAME`, `robots.txt` und `sitemap.xml` liegen im `public/`-Ordner, damit sie in den Build uebernommen werden.

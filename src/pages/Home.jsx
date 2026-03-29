@@ -18,10 +18,10 @@ export default function Home() {
             SEO-freundlich und wartungsarm - ohne Backend.
           </p>
           <div className="hero-buttons">
-            <Link to="/services.html" className="btn primary">
+            <Link to="/services" className="btn primary">
               Leistungen ansehen
             </Link>
-            <Link to="/contact.html" className="btn secondary">
+            <Link to="/contact" className="btn secondary">
               Kostenlose Erstberatung
             </Link>
           </div>

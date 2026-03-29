@@ -70,7 +70,7 @@ export default function About() {
             </p>
 
             <div className="cta-block">
-              <Link to="/contact.html" className="btn primary">
+              <Link to="/contact" className="btn primary">
                 Projekt unverbindlich anfragen
               </Link>
             </div>

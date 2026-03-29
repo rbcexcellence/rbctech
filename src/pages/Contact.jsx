@@ -188,7 +188,7 @@ export default function Contact() {
                   <label htmlFor="privacy" className="checkbox-label">
                     <input type="checkbox" id="privacy" name="privacy" value="accepted" required />
                     <span>
-                      Ich habe die <Link to="/datenschutz.html">Datenschutzerklarung</Link> gelesen und
+                      Ich habe die <Link to="/datenschutz">Datenschutzerklarung</Link> gelesen und
                       bin mit der Kontaktaufnahme einverstanden. *
                     </span>
                   </label>
